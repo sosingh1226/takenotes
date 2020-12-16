@@ -21,3 +21,9 @@
 
   # Deployed:
   Deployed Link for this App: 
+
+
+  # Screeshots:
+  ![Screenshot 1](./Assets/notetaker1.png)
+  ![Screenshot 2](./Assets/notetaker2.png)
+  ![Screenshot 3](./Assets/notetaker3.png)
