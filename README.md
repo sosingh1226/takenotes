@@ -20,7 +20,7 @@
   GitHub Link for this App: https://github.com/sosingh1226/takenotes
 
   # Deployed:
-  Deployed Link for this App: 
+  Deployed Link for this App: https://notetaker-by-ss.herokuapp.com/
 
 
   # Screeshots:
