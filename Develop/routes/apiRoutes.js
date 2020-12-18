@@ -5,7 +5,7 @@ const uuid = require("uuid");
 // it would look like- /api/notes
 
 router.get("/notes", (req, res) => {
-    fs.readFile("./db/db.json", "utf8", (err, data) => {
+    fs.readFile(__dirname+"/../db/db.json", "utf8", (err, data) => {
     if (err) throw err;
 
     const allNotes = JSON.parse(data);
@@ -18,7 +18,7 @@ router.get("/notes", (req, res) => {
 router.post("/notes", (req, res) => {
     console.log(req.body);
 
-    fs.readFile("./db/db.json", "utf8", (err, data) =>{
+    fs.readFile(__dirname+"/../db/db.json", "utf8", (err, data) =>{
         if (err) throw err;
         const allNotes = JSON.parse(data);
         const newNote = {
@@ -32,7 +32,7 @@ router.post("/notes", (req, res) => {
         );
         console.log(allNotes);
     
-        fs.writeFile("./db/db.json", JSON.stringify(allNotes), (err) =>{
+        fs.writeFile(__dirname+"/../db/db.json", JSON.stringify(allNotes), (err) =>{
             if (err) res.json ({ err: "problem adding"});
             res.json({msg:"successfully added"});
         });
@@ -42,7 +42,7 @@ router.post("/notes", (req, res) => {
 router.delete("/notes/:id", (req, res) => {
     console.log(req.body);
 
-    fs.readFile("./db/db.json", "utf8", (err, data) =>{
+    fs.readFile(__dirname+"/../db/db.json", "utf8", (err, data) =>{
         if (err) throw err;
         const allNotes = JSON.parse(data);
         const delNote = req.params.id;
@@ -52,10 +52,9 @@ router.delete("/notes/:id", (req, res) => {
         console.log(allNotes);
         console.log(result);
     
-        fs.writeFile("./db/db.json", JSON.stringify(result), (err) =>{
+        fs.writeFile(__dirname+"/../db/db.json", JSON.stringify(result), (err) =>{
             if (err) res.json ({ err: "problem deleting"});
             res.json(result);
-            res.json({msg:"successfully deleted"});
         });
     });
 });

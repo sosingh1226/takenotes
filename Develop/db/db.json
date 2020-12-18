@@ -1,17 +1,1 @@
-[
-  {
-    "title": "Doctor's Appointment",
-    "text": "MGH @ 3PM",
-    "id": "58f92940-3f36-11eb-9ed6-27dbe73a6f1d"
-  },
-  {
-    "title": "Breakfast with Myra",
-    "text": "Tatte @6am\n",
-    "id": "84733a20-3f36-11eb-adc5-ed284c6a5c03"
-  },
-  {
-    "title": "Meet Neita",
-    "text": "Coffee with discusssion",
-    "id": "70735050-400d-11eb-93f0-f9b77a5bc23b"
-  }
-]
+[{"title":"Doctor's Appointment","text":"MGH @ 3PM","id":"58f92940-3f36-11eb-9ed6-27dbe73a6f1d"},{"title":"Meet Neita","text":"Coffee with discusssion","id":"70735050-400d-11eb-93f0-f9b77a5bc23b"}]
